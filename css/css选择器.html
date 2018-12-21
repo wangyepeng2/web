@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器</title>
+    <style type="text/css">
+
+/*
+       div{
+            font-size:36px;
+            color:red;
+        }
+*/
+
+        /* 类选择器
+        .加上类的名称*/
+
+   /*.c1{
+       font-size:36px;
+       color:blueviolet;
+    }*/
+/*id选择器*/
+ /*   #d1{
+        font-size:24px;
+        color:green;
+        }*/
+/*并集选择器:当有多个选择器的css内容一样的时候就可以使用并集选择器来合并css的内容！这样就可以省略代码*/
+  /*     .c1,#d1{
+           font-size:24px;
+           color:palevioletred;
+       }*/
+        /*交集选择器:就是可以选择到某一个标签里面的子标签
+        注意：交集选择器前面两个标签名称用空格，并集选择器使用的是逗号！！
+        这里的标签除了可以写：.c1 span{} 也可以这样写：div span{}都表示的是选择了这个标签里面的子标签span*/
+      /*  .c1 span{
+            font-size:45PX;
+            color:orangered;
+        }*/
+        /*通用选择器：选择到所有同名的标签  格式：*{}
+        */
+        *{
+            font-size:24px;
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="c1">div2的内容<span>div内部的span的内容</span></div>
+<div id="d1">div2的内容</div>
+<div class="c1">div2的内容</div>
+<div >div2的内容</div>
+<span>外面span的内容</span>
+</body>
+</html>

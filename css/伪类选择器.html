@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style type="text/css">
+        /*使用link伪类控制标签没有访问过的状态 格式：对应的标签名称(例如可以是a,.c1,d1,#d1)：link */
+        a:link{
+              font-size:24px;
+              color:red;
+        }
+        /*使用hover伪类控制鼠标经过的状态*/
+        a:hover{
+            font-size:24px;
+            color:forestgreen;
+            text-decoration: none;
+        }
+        /*使用active伪类控制鼠标激活（按下但没有松开）的状态*/
+        a:active{
+            font-size:24px;
+            color:palevioletred;
+            text-decoration: underline;
+        }
+        /*使用visited伪类控制 已经被访问过的状态 （鼠标按下且松开）*/
+        a:visited{
+            font-size:24px;
+            color:gray;
+            text-decoration: none;
+        }
+        /*注意：1）在css中a:hover必须至于a:link和a:visited之后
+               2）a:active又必须被置于a:hover之后
+           正确顺序：link visited hover active
+
+        */
+    </style>
+</head>
+<body>
+<a href="css选择器.html">超链接</a>
+</body>
+</html>

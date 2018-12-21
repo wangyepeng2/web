@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页面</title>
+</head>
+<frameset rows="10%,80%,*">
+    <frame src="头部页面.html"/>
+      <frameset cols="20%,*">
+        <frame src="左边菜单页面.html"/>
+        <frame src="中间主页面.html" name="main"/>
+      </frameset>
+    <frame src="底部页面.html"/>
+</frameset>
+<body>
+<!--  frameset 框架集
+      属性： cols:按照列的放向划分框架
+            rows:按照行的方向划分框架
+            以上两个属性的值填框架的比列或长度
+            rows="10%，80%，10%"   或者也可以这样写：rows="10%，*，10%" *表示其他框架分配完剩下的比例
+ franme 表示一个框架款 框架中包含一个html文件，有两个或者两个以上就会包含在frame set里面
+      注意：框架的标签不能放在body标签中，否则无法显示       -->
+</body>
+</html>
