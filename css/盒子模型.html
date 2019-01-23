@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        div{
+            /*宽度和高度
+            注意：1）设置的宽度和高度就能限制盒子里面所能装的内容的多少
+            2）还可以在生成的页面查看盒子模型的图（选择布局） 在页面右键查看就可以看，除此之外也是可以查看源代码的！
+            3）为了方便修改盒子的大小来适应内容，就可以在页面查看的时候在布局的盒子图片里面直接修改宽度和高度，但是这修改只是临时的，刷新之后就会回复原样*/
+            width: 200px;
+            height: 100px;
+            /*设置边框（之前学的边框的属性）  */
+            border: red 3px solid;
+            /*设置内边距（padding）--调整边框和内容的距离*/
+            padding-left: 10px;
+            padding-top: 20px;
+            /*调整外边距（margin）:决定盒子与盒子之间的距离  若是单独设置一个盒子可以使用id选择器 */
+            /*margin-bottom: 10px;*/
+
+        }
+        /*单独设置一个盒子，使用id选择器 需要单列出来，不在第一个div里面了*/
+        #div1{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<!--这些标签的基本布局都是一个挨着一个的-->
+<div id="div1">div1</div>
+<div>div2</div>
+</body>
+</html>

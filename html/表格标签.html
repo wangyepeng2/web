@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>表格标签</title>
 </head>
+<style type="text/css">
+    /*使用伪类选择器添加表格背景颜色 鼠标移动过表格背景颜色*/
+    tbody tr:hover{
+        background-color: red;
+    }
+</style>
 <body>
 <!-- 表格标签
       <table> </table>  表格
@@ -22,12 +28,14 @@
       -->
 <table border="1px" width="500px" height="300px" align="center">
     <caption>2014年期末总成绩</caption>
+    <thead>
     <tr>
         <th>姓名</th>
         <th>班级</th>
         <th>成绩</th>
         <th>4</th>
     </tr>
+    </thead>
     <tr>
         <td rowspan="2">5</td>
         <td>6</td>
