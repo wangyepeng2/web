@@ -2,3 +2,7 @@ my new file contents
 
 
 bbbbbbb
+
+
+
+aaaaaa
